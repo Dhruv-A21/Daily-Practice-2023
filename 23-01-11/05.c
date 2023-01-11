@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+
 
 int main(void) {
 	int T,N,Y;
@@ -13,8 +13,7 @@ int main(void) {
 	        O=O|a[i];
 	    }
 	    int T=-1;
-	    int b=pow(2,20)+1;
-	    for(int i=0;i<b;i++){
+	    for(int i=0;i<=Y;i++){
 	        int a=O|i;
 	        if(a==Y){
 	            T=i;
