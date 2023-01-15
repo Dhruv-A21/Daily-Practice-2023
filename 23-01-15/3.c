@@ -3,7 +3,7 @@
 
 int main(void) {
 	float T,A,B,C,D;
-	scnaf("%f",&T);
+	scanf("%f",&T);
 	while(T--){
 	    scanf("%f %f %f %f",&A,&B,&C,&D);
 	    float a,b;
