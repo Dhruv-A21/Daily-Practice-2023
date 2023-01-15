@@ -5,26 +5,17 @@ int main(void) {
 	scanf("%d",&T);
 	while(T--){
 	    scanf("%d %d %d",&A,&B,&C);
-	    int neg=0,zero=0;
-	    if(A<0){
+	    int neg=0;
+	    if(A*B<0){
 	        neg++;
 	    }
-	    if(A==0){
-	        zero++;
-	    }
-	    if(B<0){
+	    if(B*C<0){
 	        neg++;
 	    }
-	    if(B==0){
-	        zero++;
-	    }
-	    if(C<0){
+	    if(A*C<0){
 	        neg++;
 	    }
-	    if(C==0){
-	        zero++;
-	    }
-	    if(neg>0 && neg<3 && zero<2){
+	    if(neg>0){
 	        printf("YES\n");
 	    }
 	    else{
@@ -33,4 +24,6 @@ int main(void) {
 	}
 	return 0;
 }
+
+
 
