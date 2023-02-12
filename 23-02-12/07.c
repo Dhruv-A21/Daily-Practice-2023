@@ -7,14 +7,12 @@ int main(void) {
 	    int N;
 	    scanf("%d",&N);
 	    int sum=N*(N+1)/2;
-	    int i=N;
-	    for(i=N;i>=1;i--){
-	        if(sum%2==0){
-	            break;
-	        }
-	        sum=sum-i;
+	    if(sum%2==0){
+	        printf("%d\n",N);
 	    }
-	    printf("%d\n",i);
+	    else{
+	        printf("%d\n",N-1);
+	    }
 	}
 	return 0;
 }
