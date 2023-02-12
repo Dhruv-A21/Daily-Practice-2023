@@ -6,14 +6,8 @@ int main(void) {
 	while(T--){
 	    int L,R;
 	    scanf("%d %d",&L,&R);
-	    if(L==R){
-	        printf("1\n");
-	    }
-	    else{
-	        int num=(R-L+1);
-	        int x=num*(num-1)/2;
-	        printf("%d\n",num+x);
-	    }
+	    int num=(2*R)-(2*L)+1;
+	    printf("%d\n",num);
 	}
 	return 0;
 }
