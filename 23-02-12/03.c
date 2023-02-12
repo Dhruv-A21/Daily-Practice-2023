@@ -6,8 +6,12 @@ int main(void) {
 	while(T--){
 	    int N,K;
 	    scanf("%d %d",&N,&K);
-	    int times=N/K;
-	    printf("%d\n",N-(K*times));
+	    if(K==0){
+	        printf("%d\n",N);
+	    }
+	    else{
+	        printf("%d\n",N%K);
+	    }
 	}
 	return 0;
 }
