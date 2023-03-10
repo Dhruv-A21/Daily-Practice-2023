@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
 
-int main() {
+signed main() {
 	int T;
 	cin>>T;
 	while(T--){
@@ -14,7 +15,7 @@ int main() {
 	    for(int i=0;i<4;i++){
 	        w=w+(a[i]-a[0]);
 	    }
-	    printf("%d\n",w);
+	    cout<<w<<endl;
 	}
 	return 0;
 }
